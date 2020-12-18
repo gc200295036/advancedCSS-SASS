@@ -1,0 +1,99 @@
+/* line 2, ../../lesson-12-files-start/scss/_reset.scss */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* STEP 1: Variables */
+/* line 9, ../../lesson-12-files-start/scss/sass.scss */
+body {
+  font: 100%/1.4 Helvetica, Arial, sans-serif;
+  color: darkgrey;
+  margin: 1em;
+}
+
+/* STEP 2: Nesting CSS selectors */
+/* line 17, ../../lesson-12-files-start/scss/sass.scss */
+header h1 {
+  color: red;
+}
+
+/* line 20, ../../lesson-12-files-start/scss/sass.scss */
+header p {
+  text-transform: uppercase;
+}
+
+/* STEP 3: Partials and Importing */
+/* Open reset.css, rename it _reset.scss and put @import 'reset'; at the top of this .scss file */
+/* STEP 4: Mixins */
+/* line 37, ../../lesson-12-files-start/scss/sass.scss */
+header {
+  -webkit-border-radius: 15x;
+  -moz-border-radius: 15x;
+  -ms-border-radius: 15x;
+  -o-border-radius: 15x;
+  border-radius: 15x;
+  background-color: lightgrey;
+  padding: 1em;
+}
+
+/* line 43, ../../lesson-12-files-start/scss/sass.scss */
+footer {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background-color: lightgrey;
+  padding: 1em;
+}
+
+/* STEP 5: Extend/Inheritance */
+/* line 50, ../../lesson-12-files-start/scss/sass.scss */
+.message, .success, .error, .warning {
+  border: 2px solid #ccc;
+  padding: 1em;
+  color: #333;
+  font-weight: bold;
+  background-color: lightgrey;
+}
+
+/* line 60, ../../lesson-12-files-start/scss/sass.scss */
+.success {
+  background-color: lightgreen;
+}
+
+/* line 65, ../../lesson-12-files-start/scss/sass.scss */
+.error {
+  background-color: pink;
+}
+
+/* line 70, ../../lesson-12-files-start/scss/sass.scss */
+.warning {
+  background-color: gold;
+}
+
+/* STEP 5: Operators */
+/* line 76, ../../lesson-12-files-start/scss/sass.scss */
+main > section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* line 82, ../../lesson-12-files-start/scss/sass.scss */
+main > section > article {
+  flex-basis: 62.5%;
+}
+
+/* line 86, ../../lesson-12-files-start/scss/sass.scss */
+main > section > aside {
+  flex-basis: 62.5%;
+}
+
+/* http://sass-lang.com/guide */
+
+/*# sourceMappingURL=sass.css.map */
